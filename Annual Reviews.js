@@ -78,8 +78,8 @@ function detectWeb(doc, url) {
 	if ( url.match(/\/doi\/(abs|full|pdf)\//) ) {
 
 		return 'journalArticle';
-
-	} else if ( title.match('- table of contents -') ||
+	//Updating url below as per the current site changes 
+	} else if ( url.match('/toc/') ||
 		title.match('- most downloaded reviews') ||
 		title.match('- most cited reviews') ||
 		title.match('- forthcoming -') ||
